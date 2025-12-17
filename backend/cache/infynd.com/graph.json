@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "id": "company_unknown",
+      "type": "Company",
+      "label": "Unknown Company",
+      "properties": {
+        "description": "",
+        "industry": "",
+        "logo_url": "https://infynd.com/about_files/68930a9ae3812af317505774_reviews.png",
+        "headquarters": null
+      }
+    }
+  ],
+  "edges": []
+}

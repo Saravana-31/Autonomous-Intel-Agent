@@ -1,0 +1,34 @@
+{
+  "company_name": "",
+  "logo_url": "https://infynd.com/about_files/68930a9ae3812af317505774_reviews.png",
+  "description_short": "",
+  "industry": "",
+  "products_services": [],
+  "locations": [],
+  "headquarters": null,
+  "key_people": [],
+  "contact": {
+    "email": null,
+    "phone": null
+  },
+  "tech_stack": [],
+  "data_quality": {
+    "confidence_score": 0,
+    "level": "low",
+    "missing_fields": [
+      "company_name",
+      "description_short",
+      "industry",
+      "products_services",
+      "locations",
+      "key_people",
+      "contact",
+      "tech_stack"
+    ],
+    "warnings": [
+      "\u26a0\ufe0f LOW CONFIDENCE: Insights may be incomplete. The agent refuses to generate unreliable business intelligence.",
+      "Company name is missing or invalid"
+    ],
+    "is_reliable": false
+  }
+}

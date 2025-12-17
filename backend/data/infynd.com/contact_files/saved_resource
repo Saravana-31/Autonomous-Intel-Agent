@@ -1,0 +1,24 @@
+(function (w, d) {
+  var dynamicPixel = function() {
+    var pixelURL = "https://a.remarketstats.com/px/smart/?c=24d1add2443e239&amp;partner_id=CswrxtgQyEjLzHk9&amp;partner_rid=f857cc1e%2d6e80%2d4045%2da508%2d8ef48041e979&amp;type=img&seg=";
+    var urlPath = w.location.pathname.substr(1).replace(/\/+$/, '');
+    if (urlPath === "") { urlPath = "home"; }
+    console.log(urlPath);
+    var segmentValue = urlPath;
+    var script = d.createElement('script');
+    if (pixelURL.indexOf("seg=") === -1) {
+      pixelURL = pixelURL + "seg=";
+    }
+    script.src = pixelURL + escape(segmentValue);
+    d.getElementsByTagName('script')[0].parentNode.appendChild(script);
+  };
+
+  var body = d.getElementsByTagName('body')[0];
+  if (body) {
+    dynamicPixel();
+  } else {
+    w.onload = function () {
+      dynamicPixel();
+    }
+  }
+})(window, document);
