@@ -1,0 +1,234 @@
+{
+  "domain": "bluescorpion.co.uk",
+  "profile": {
+    "company_name": "Blue Scorpion Ltd",
+    "domain": "bluescorpion.co.uk",
+    "short_description": "PCI DSS compliance specialists providing network security, WiFi and payment solutions for retailers.",
+    "long_description": "Blue Scorpion Ltd helps retailers achieve and maintain PCI DSS compliance through managed services including IP Protect, Cyber Protect, secure WiFi, payment solutions and IT procurement. With over 55 years combined expertise, they protect businesses from fines and cyber threats while driving customer footfall.",
+    "industry": "Information Technology",
+    "sub_industry": "Cybersecurity",
+    "services_offered": [
+      "IP Protect",
+      "IP Protect Lite",
+      "Cyber Protect",
+      "Secure GDPR compliant WiFi",
+      "Payment Solutions",
+      "IT Procurement"
+    ],
+    "products_offered": [],
+    "contact_information": {
+      "email_addresses": [
+        "sales@bluescorpion.co.uk"
+      ],
+      "phone_numbers": [
+        "+44 (0)1732 602111"
+      ],
+      "physical_address": "East Malling Business Centre, NFU Building, New Road, East Malling, Kent, ME19 6BJ",
+      "country": "United Kingdom",
+      "city": "East Malling",
+      "contact_page": "https://www.bluescorpion.co.uk/contact"
+    },
+    "people_information": [],
+    "people_status": "validated_absent",
+    "services": [
+      {
+        "domain": "bluescorpion.co.uk",
+        "service_or_product_name": "IP Protect",
+        "type": "service"
+      },
+      {
+        "domain": "bluescorpion.co.uk",
+        "service_or_product_name": "Cyber Protect",
+        "type": "service"
+      },
+      {
+        "domain": "bluescorpion.co.uk",
+        "service_or_product_name": "Secure WiFi",
+        "type": "service"
+      },
+      {
+        "domain": "bluescorpion.co.uk",
+        "service_or_product_name": "Payment Solutions",
+        "type": "service"
+      },
+      {
+        "domain": "bluescorpion.co.uk",
+        "service_or_product_name": "IT Procurement",
+        "type": "service"
+      }
+    ],
+    "social_media": [],
+    "social_status": "validated_absent",
+    "certifications": [],
+    "certification_status": "validated_absent",
+    "locations": [
+      {
+        "type": "HQ",
+        "address": "East Malling Business Centre, NFU Building, New Road",
+        "city": "East Malling",
+        "country": "United Kingdom"
+      }
+    ],
+    "tech_stack_signals": {
+      "cms": [
+        "WordPress"
+      ],
+      "analytics": [],
+      "frontend": [
+        "jQuery"
+      ],
+      "marketing": []
+    },
+    "logo_url": "http://bluescorpion.co.uk/bluescorpion.co.uk_files/Blue-Scorpion.png",
+    "products_services": [
+      "IP Protect",
+      "IP Protect Lite",
+      "Cyber Protect",
+      "Secure GDPR compliant WiFi",
+      "Payment Solutions",
+      "IT Procurement"
+    ],
+    "key_people": [],
+    "contact_details": {
+      "email_addresses": [
+        "sales@bluescorpion.co.uk"
+      ],
+      "phone_numbers": [
+        "+44 (0)1732 602111"
+      ],
+      "physical_address": "East Malling Business Centre, NFU Building, New Road, East Malling, Kent, ME19 6BJ",
+      "country": "United Kingdom",
+      "city": "East Malling",
+      "contact_page": "https://www.bluescorpion.co.uk/contact"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "company_bluescorpion",
+        "type": "Company",
+        "label": "Blue Scorpion Ltd",
+        "properties": {
+          "domain": "bluescorpion.co.uk",
+          "industry": "Information Technology",
+          "sub_industry": "Cybersecurity",
+          "short_description": "PCI DSS compliance specialists providing network security, WiFi and payment solutions for retailers."
+        }
+      },
+      {
+        "id": "location_east_malling_united_kingdom_0",
+        "type": "Location",
+        "label": "East Malling, United Kingdom",
+        "properties": {
+          "type": "HQ",
+          "address": "East Malling Business Centre, NFU Building, New Road, East Malling, Kent, ME19 6BJ",
+          "city": "East Malling",
+          "country": "United Kingdom"
+        }
+      },
+      {
+        "id": "product_ip_protect_0",
+        "type": "Product/Service",
+        "label": "IP Protect",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_cyber_protect_1",
+        "type": "Product/Service",
+        "label": "Cyber Protect",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_secure_wifi_2",
+        "type": "Product/Service",
+        "label": "Secure WiFi",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_payment_solutions_3",
+        "type": "Product/Service",
+        "label": "Payment Solutions",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_it_procurement_4",
+        "type": "Product/Service",
+        "label": "IT Procurement",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "tech_wordpress",
+        "type": "Tech",
+        "label": "WordPress",
+        "properties": {}
+      },
+      {
+        "id": "tech_jquery",
+        "type": "Tech",
+        "label": "jQuery",
+        "properties": {}
+      }
+    ],
+    "edges": [
+      {
+        "source": "company_bluescorpion",
+        "target": "location_east_malling_united_kingdom_0",
+        "relationship": "LOCATED_AT"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "product_ip_protect_0",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "product_cyber_protect_1",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "product_secure_wifi_2",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "product_payment_solutions_3",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "product_it_procurement_4",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "tech_wordpress",
+        "relationship": "USES_TECH"
+      },
+      {
+        "source": "company_bluescorpion",
+        "target": "tech_jquery",
+        "relationship": "USES_TECH"
+      }
+    ]
+  },
+  "metadata": {
+    "extraction_mode": "ollama",
+    "model_name": "llama3.1",
+    "timestamp": "2025-12-18T07:26:44.375499",
+    "offline": true,
+    "schema_version": "2.0.0",
+    "extraction_confidence": "medium",
+    "extraction_status": "complete"
+  }
+}

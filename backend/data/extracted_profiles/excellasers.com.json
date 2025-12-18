@@ -1,0 +1,124 @@
+{
+  "domain": "excellasers.com",
+  "profile": {
+    "company_name": "Excel Lasers Limited",
+    "domain": "excellasers.com",
+    "short_description": "Excel Lasers – laser and Airplasma® products, services and expertise for medical and veterinary care.",
+    "long_description": "Excel Lasers Limited supplies laser and Airplasma® systems, packages and support for medical (NHS/private clinics) and veterinary practices across the UK.",
+    "industry": "Medical Devices",
+    "sub_industry": "not_found",
+    "services_offered": [
+      "Medical laser systems and support",
+      "Veterinary laser systems and support",
+      "Veterinary Airplasma surgery using Onemytis",
+      "Varicose vein treatment packages",
+      "Equine sarcoid surgery solutions",
+      "BOAS surgery solutions",
+      "Laser service and repair"
+    ],
+    "products_offered": [
+      "Medical laser products",
+      "Veterinary laser products",
+      "Onemytis 2 Airplasma device"
+    ],
+    "contact_information": {
+      "email_addresses": [
+        "info@excellasers.com",
+        "service@excellasers.com"
+      ],
+      "phone_numbers": [
+        "+44 (0)1440 783201"
+      ],
+      "physical_address": "The Old Yard, Great Bradley Hall, Newmarket, CB8 9LT",
+      "country": "United Kingdom",
+      "city": "Newmarket",
+      "contact_page": "https://excellasers.com/contact-us"
+    },
+    "people_information": [],
+    "people_status": "validated_absent",
+    "services": [],
+    "social_media": [],
+    "social_status": "validated_absent",
+    "certifications": [],
+    "certification_status": "validated_absent",
+    "locations": [
+      {
+        "type": "HQ",
+        "address": "The Old Yard, Great Bradley Hall, Newmarket, CB8 9LT",
+        "city": "Newmarket",
+        "country": "United Kingdom"
+      }
+    ],
+    "tech_stack_signals": {
+      "cms": [
+        "WordPress"
+      ],
+      "analytics": [],
+      "frontend": [
+        "jQuery"
+      ],
+      "marketing": []
+    },
+    "logo_url": "http://excellasers.com/excellasers.com_files/Excel-Lasers.png",
+    "products_services": [
+      "Laser products",
+      "Airplasma products",
+      "Medical laser services",
+      "Veterinary laser services"
+    ],
+    "key_people": [],
+    "contact_details": {
+      "email_addresses": [
+        "info@excellasers.com",
+        "service@excellasers.com"
+      ],
+      "phone_numbers": [
+        "+44 (0)1440 783201"
+      ],
+      "physical_address": "The Old Yard, Great Bradley Hall, Newmarket, CB8 9LT",
+      "country": "United Kingdom",
+      "city": "Newmarket",
+      "contact_page": "https://excellasers.com/contact-us"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "company_excellasers",
+        "type": "Company",
+        "label": "Excel Lasers Limited",
+        "properties": {
+          "domain": "excellasers.com",
+          "industry": "Medical Devices",
+          "sub_industry": "not_found",
+          "short_description": "Excel Lasers – laser and Airplasma® products, services and expertise for medical and veterinary care."
+        }
+      },
+      {
+        "id": "location_newmarket_united_kingdom_0",
+        "type": "Location",
+        "label": "Newmarket, United Kingdom",
+        "properties": {
+          "type": "HQ",
+          "address": "The Old Yard, Great Bradley Hall, Newmarket, CB8 9LT",
+          "city": "Newmarket",
+          "country": "United Kingdom"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "company_excellasers",
+        "target": "location_newmarket_united_kingdom_0",
+        "relationship": "LOCATED_AT"
+      }
+    ]
+  },
+  "metadata": {
+    "extraction_mode": "ollama",
+    "model_name": "llama3.1",
+    "timestamp": "2025-12-18T05:23:19.739278",
+    "offline": true,
+    "schema_version": "2.0.0"
+  }
+}

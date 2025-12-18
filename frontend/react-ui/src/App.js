@@ -20,7 +20,9 @@ function App() {
     try {
       const res = await fetch(`${API_BASE}/`);
       const data = await res.json();
-      setServerStatus(data.llm_loaded ? 'ready' : 'loading');
+      // Check if both LLMs are available
+      const isPrimaryAvailable = data.llm?.primary?.available;
+      setServerStatus(isPrimaryAvailable ? 'ready' : 'loading');
     } catch {
       setServerStatus('offline');
     }
@@ -158,9 +160,20 @@ function App() {
                     Locations
                   </h3>
                   <ul className="tag-list">
-                    {result.profile.locations.map((loc, i) => (
-                      <li key={i} className="tag tag-location">{loc}</li>
-                    ))}
+                    {result.profile.locations.map((loc, i) => {
+                      // Handle both string (legacy) and object (new Location schema)
+                      if (typeof loc === 'string') {
+                        return <li key={i} className="tag tag-location">{loc}</li>;
+                      } else if (loc && typeof loc === 'object') {
+                        return (
+                          <li key={i} className="tag tag-location">
+                            <span className="location-type">{loc.type}</span>
+                            {loc.city && loc.country ? `${loc.city}, ${loc.country}` : loc.address}
+                          </li>
+                        );
+                      }
+                      return null;
+                    })}
                   </ul>
                 </section>
               )}

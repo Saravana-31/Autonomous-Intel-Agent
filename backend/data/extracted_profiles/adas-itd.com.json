@@ -1,0 +1,232 @@
+{
+  "domain": "adas-itd.com",
+  "profile": {
+    "company_name": "ADAS Ltd",
+    "domain": "adas-itd.com",
+    "short_description": "Cyber security consultancy providing services such as vulnerability scanning, penetration testing and policy development.",
+    "long_description": "ADAS Ltd is a UK-based cyber security consultancy that offers a range of services including Cyber Essentials, Vulnerability Scanning, Penetration Testing, Policy Development, Security Training and Culture Building. Their mission is to help organizations protect themselves against cyber threats. They work with clients across various industries to provide tailored solutions.",
+    "industry": "Information Technology",
+    "sub_industry": "Cybersecurity",
+    "services_offered": [
+      "Vulnerability Scanning",
+      "Penetration Testing",
+      "Policy Development",
+      "Security Training and Culture Building",
+      "IASME Cyber Assurance"
+    ],
+    "products_offered": [],
+    "contact_information": {
+      "email_addresses": [
+        "info@adas-ltd.com"
+      ],
+      "phone_numbers": [
+        "+44 (0)1225 580 100"
+      ],
+      "physical_address": "2nd Floor, Royal London House, 22 Balderton Street, London, W1K 6SE",
+      "country": "United Kingdom",
+      "city": "London",
+      "contact_page": "https://adas-ltd.com/contact/"
+    },
+    "people_information": [],
+    "people_status": "validated_absent",
+    "services": [
+      {
+        "domain": "adas-itd.com",
+        "service_or_product_name": "Vulnerability Scanning",
+        "type": "service"
+      },
+      {
+        "domain": "adas-itd.com",
+        "service_or_product_name": "Penetration Testing",
+        "type": "service"
+      },
+      {
+        "domain": "adas-itd.com",
+        "service_or_product_name": "Policy Development",
+        "type": "service"
+      },
+      {
+        "domain": "adas-itd.com",
+        "service_or_product_name": "Security Training and Culture Building",
+        "type": "service"
+      },
+      {
+        "domain": "adas-itd.com",
+        "service_or_product_name": "IASME Cyber Assurance",
+        "type": "service"
+      }
+    ],
+    "social_media": [],
+    "social_status": "validated_absent",
+    "certifications": [],
+    "certification_status": "validated_absent",
+    "locations": [
+      {
+        "type": "HQ",
+        "address": "2nd Floor, Royal London House, 22 Balderton Street",
+        "city": "London",
+        "country": "United Kingdom"
+      }
+    ],
+    "tech_stack_signals": {
+      "cms": [
+        "WordPress"
+      ],
+      "analytics": [],
+      "frontend": [
+        "jQuery"
+      ],
+      "marketing": []
+    },
+    "logo_url": "http://adas-itd.com/adas-ltd.com_files/Fasthosts_logo.svg.png",
+    "products_services": [
+      "Vulnerability Scanning",
+      "Penetration Testing",
+      "Policy Development",
+      "Security Training and Culture Building",
+      "IASME Cyber Assurance"
+    ],
+    "key_people": [],
+    "contact_details": {
+      "email_addresses": [
+        "info@adas-ltd.com"
+      ],
+      "phone_numbers": [
+        "+44 (0)1225 580 100"
+      ],
+      "physical_address": "2nd Floor, Royal London House, 22 Balderton Street, London, W1K 6SE",
+      "country": "United Kingdom",
+      "city": "London",
+      "contact_page": "https://adas-ltd.com/contact/"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "company_adas_itd",
+        "type": "Company",
+        "label": "ADAS Ltd",
+        "properties": {
+          "domain": "adas-itd.com",
+          "industry": "Information Technology",
+          "sub_industry": "Cybersecurity",
+          "short_description": "Cyber security consultancy providing services such as vulnerability scanning, penetration testing and policy development."
+        }
+      },
+      {
+        "id": "location_london_united_kingdom_0",
+        "type": "Location",
+        "label": "London, United Kingdom",
+        "properties": {
+          "type": "HQ",
+          "address": "2nd Floor, Royal London House, 22 Balderton Street, London, W1K 6SE",
+          "city": "London",
+          "country": "United Kingdom"
+        }
+      },
+      {
+        "id": "product_vulnerability_scanning_0",
+        "type": "Product/Service",
+        "label": "Vulnerability Scanning",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_penetration_testing_1",
+        "type": "Product/Service",
+        "label": "Penetration Testing",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_policy_development_2",
+        "type": "Product/Service",
+        "label": "Policy Development",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_security_training_and_culture_building_3",
+        "type": "Product/Service",
+        "label": "Security Training and Culture Building",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "product_iasme_cyber_assurance_4",
+        "type": "Product/Service",
+        "label": "IASME Cyber Assurance",
+        "properties": {
+          "type": "service"
+        }
+      },
+      {
+        "id": "tech_wordpress",
+        "type": "Tech",
+        "label": "WordPress",
+        "properties": {}
+      },
+      {
+        "id": "tech_jquery",
+        "type": "Tech",
+        "label": "jQuery",
+        "properties": {}
+      }
+    ],
+    "edges": [
+      {
+        "source": "company_adas_itd",
+        "target": "location_london_united_kingdom_0",
+        "relationship": "LOCATED_AT"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "product_vulnerability_scanning_0",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "product_penetration_testing_1",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "product_policy_development_2",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "product_security_training_and_culture_building_3",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "product_iasme_cyber_assurance_4",
+        "relationship": "OFFERS"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "tech_wordpress",
+        "relationship": "USES_TECH"
+      },
+      {
+        "source": "company_adas_itd",
+        "target": "tech_jquery",
+        "relationship": "USES_TECH"
+      }
+    ]
+  },
+  "metadata": {
+    "extraction_mode": "ollama",
+    "model_name": "llama3.1",
+    "timestamp": "2025-12-18T07:26:44.375499",
+    "offline": true,
+    "schema_version": "2.0.0",
+    "extraction_confidence": "medium",
+    "extraction_status": "complete"
+  }
+}

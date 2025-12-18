@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://www.bluescorpion.co.uk/ -->
+<html lang="en" class=" webp webp-alpha webp-animation webp-lossless"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style> body {opacity:0;transition: 10ms opacity;} </style>
+  <title>Blue Scorpion | PCI DSS solutions for retail</title>
+  
+   <meta name="description" content="We are specialists in PCI DSS compliance - and with our help, you can be too. We save you money on non-compliance fines and help protect your brand.">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Blue Scorpion | PCI DSS solutions for retail">
+	<meta property="og:description" content="We are specialists in PCI DSS compliance - and with our help, you can be too. We save you money on non-compliance fines and help protect your brand.">
+	<meta property="og:url" content="https://www.bluescorpion.co.uk/">
+	<meta property="og:site_name" content="Blue Scorpion">
+	<meta property="og:image" content="https://www.bluescorpion.co.uk/images/bluescorpion_logo_round.png">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Blue Scorpion | PCI DSS solutions for retail">
+	<meta name="twitter:description" content="We are specialists in PCI DSS compliance - and with our help, you can be too. We save you money on non-compliance fines and help protect your brand.">
+	  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="icon" href="https://www.bluescorpion.co.uk/images/fav.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.bluescorpion.co.uk/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.bluescorpion.co.uk/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.bluescorpion.co.uk/favicon-16x16.png">
+  <link rel="manifest" href="https://www.bluescorpion.co.uk/site.webmanifest">
+  <link rel="mask-icon" href="https://www.bluescorpion.co.uk/safari-pinned-tab.svg" color="#293484">
+  
+<script src="./bluescorpion.co.uk_files/twk-main.js.download" charset="UTF-8" crossorigin="*"></script><script src="./bluescorpion.co.uk_files/twk-vendor.js.download" charset="UTF-8" crossorigin="*"></script><script src="./bluescorpion.co.uk_files/twk-chunk-vendors.js.download" charset="UTF-8" crossorigin="*"></script><script src="./bluescorpion.co.uk_files/twk-chunk-common.js.download" charset="UTF-8" crossorigin="*"></script><script src="./bluescorpion.co.uk_files/twk-runtime.js.download" charset="UTF-8" crossorigin="*"></script><script src="./bluescorpion.co.uk_files/twk-app.js.download" charset="UTF-8" crossorigin="*"></script><script async="" src="./bluescorpion.co.uk_files/default" charset="UTF-8" crossorigin="*"></script><script src="./bluescorpion.co.uk_files/385273212084604" async=""></script><script src="./bluescorpion.co.uk_files/sdk.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./bluescorpion.co.uk_files/analytics.js.download"></script><script type="text/javascript" async="" src="./bluescorpion.co.uk_files/js"></script><script async="" src="./bluescorpion.co.uk_files/fbevents.js.download"></script><script type="text/javascript" src="./bluescorpion.co.uk_files/pframe_async.js.download" async=""></script>
+<script type="text/javascript" src="./bluescorpion.co.uk_files/jquery.js.download"></script><script src="./bluescorpion.co.uk_files/sprintf.js.download"></script><script src="./bluescorpion.co.uk_files/strftime.js.download"></script><script src="./bluescorpion.co.uk_files/jquery-bindfirst.js.download"></script>
+<script type="text/javascript" src="./bluescorpion.co.uk_files/pframe.js.download"></script>
+<script language="javascript" type="text/javascript">
+// JS added by _PF_doRegisteredJS
+jQuery.noConflict();
+var _PF_returnRouteID='6943847f93a10';
+var _PF_pageID='';
+</script>
+<script language="javascript" type="text/javascript">
+// JS added by lazyLoadImages
+_PF_addEvent(window, 'DOMContentLoaded', function() {
+	try {
+		const images = window.document.querySelectorAll('source, img');
+		const config = {
+			rootMargin: '1px 0px',
+			threshold: 0.01
+		};
+		let observer;
+		let preloadImage = (element) => {
+			if (element.dataset && element.dataset.src) {
+				element.src = element.dataset.src;
+			}
+			if (element.dataset && element.dataset.srcset) {
+				element.srcset = element.dataset.srcset
+			}
+		}
+		let onIntersection = (entries) => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					observer.unobserve(entry.target);
+					preloadImage(entry.target);
+				}
+			});
+		}
+		if (!('IntersectionObserver' in window)) {
+			Array.from(images).forEach(image => preloadImage(image));
+		}else{
+			observer = new IntersectionObserver(onIntersection, config);
+			images.forEach(image => {
+				observer.observe(image);
+			});
+		}
+	}catch(err) {
+		alert(err);
+	}
+});
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '385273212084604');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=385273212084604&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./bluescorpion.co.uk_files/js(1)"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-3587746-1');
+</script>
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style><style type="text/css">.fancybox-margin{margin-right:15px;}</style></head>
+<body style="opacity: 1;">
+  <header>
+    <div class="navbar-toggler toggle" role="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+    </div>
+    <div class="row topbar no-gutters">
+      <div class="col bluescorpion_gradbg">
+        <div class="social_icons_outer">
+          <span class="social_icons">
+            <a target="_newWinFB" href="https://www.facebook.com/BlueScorpionLimited/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinTW" href="https://twitter.com/BlueScorpionLtd" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinLI" href="https://www.linkedin.com/company/blue-scorpion-limited?trk=company_logo" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinIN" href="https://www.instagram.com/bluescorpionltd/" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinYT" href="https://www.youtube.com/channel/UC1JIOvUd3eb0APDjApymN1A" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </span>
+        </div>
+        <span class="top_bar_tel_email">
+          <span class="telno">01732 602 111</span> <a href="mailto:sales@bluescorpion.co.uk" class="top_bar_email">sales@bluescorpion.co.uk</a>
+        </span>
+        <span class="shopping_cart">
+          <a href="https://www.bluescorpion.co.uk/basket" title="Shopping Cart"><i class="fas fa-shopping-cart"></i> <span id="cart_number_id" class="cart_number">0</span></a>
+        </span>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters px-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 center-align no-gutters">
+          <div class="logos_outer">
+            <div class="blue_scorpion_logo">
+              <picture>
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/blue_scorpion_logo_768_screen.webp" type="image/webp">
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/blue_scorpion_logo.png" type="image/png">
+                <source media="(min-width: 769px)" srcset="/images/blue_scorpion_logo.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/images/blue_scorpion_logo.png" type="image/png">
+                <img src="./bluescorpion.co.uk_files/blue_scorpion_logo.png" alt="Blue Scorpion">
+              </picture>
+            </div>
+            <div class="eit_logo">
+              <a href="https://www.euroit.co.uk/">
+              <picture>
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/eit_logo_768_screen.webp" type="image/webp">
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/eit_logo.png" type="image/png">
+                <source media="(min-width: 769px)" srcset="/images/eit_logo.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/images/eit_logo.png" type="image/png">
+                <img src="./bluescorpion.co.uk_files/eit_logo.png" alt="EIT">
+              </picture>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 center-align no-gutters">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbar1">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.bluescorpion.co.uk/"><span>HOME</span></a>
+
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link" href="https://www.bluescorpion.co.uk/products" data-toggle="dropdown">PRODUCTS&nbsp;&nbsp; <i class="fas fa-angle-down"></i></a>
+                  <ul id="products_dropdown" class="dropdown-menu hover_or_click animate slideIn">
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/cyber-protect">Cyber Protect</a></li>
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/ip-protect-lite">IP Protect Lite</a></li>
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/ip-protect-enterprise">IP Protect (Enterprise)</a></li>
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/wifi">GDPR Compliant WiFi</a></li>
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/payment-solutions">Payment Solutions</a></li>
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/it-procurement">IT Procurement</a></li>
+                    <li><a class="dropdown-item" href="https://www.bluescorpion.co.uk/datasheets">Datasheets</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.bluescorpion.co.uk/buy-now"><span>BUY NOW</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.bluescorpion.co.uk/about-us"><span>ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.bluescorpion.co.uk/contact"><span>CONTACT</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <div class="container-fluid no-gutters px-0 home_main_outer">
+      <div class="row no-gutters equal align-items-center h-100 home_main">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 center-align no-gutters home_main_left">
+          <h1>NEED A PAYMENT SPECIALIST?<br>TALK TO BLUE SCORPION</h1>
+          <h2>Network Security<br class="breaker"><i class="fas fa-circle fa-xs"></i>Payment Solutions<br class="breaker"><i class="fas fa-circle fa-xs"></i>PCI DSS<br class="breaker"><i class="fas fa-circle fa-xs"></i>WiFi Analytics</h2>
+          <p>Avoid fines, protect data and build trust in your brand</p>
+        </div>
+        <div class="col-lg-5 center-align no-gutters">
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="carouselExampleIndicators" data-slide-to="0" class=""></li>
+              <li data-target="carouselExampleIndicators" data-slide-to="1" class="active"></li>
+              <li data-target="carouselExampleIndicators" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <!-- Slide One  -->
+              <div class="carousel-item center-align">
+                <a href="https://www.bluescorpion.co.uk/ip-protect-lite">
+                  <picture>
+                  <!--
+                    <source media="(min-width: 320px) and (max-width: 768px)" data-srcset="/images/ip_protect_lite_768_screen.webp" type="image/webp">
+                    <source media="(min-width: 320px) and (max-width: 768px)" data-srcset="/images/ip_protect_lite.png" type="image/png">
+                    <source media="(min-width: 769px)" data-srcset="/images/ip_protect_lite.webp" type="image/webp">
+                    <source media="(min-width: 769px)" data-srcset="/images/ip_protect_lite.png" type="image/png">
+                  -->
+                    <source srcset="/images/ip_protect_lite_768_screen.webp" type="image/webp">
+                    <source srcset="/images/ip_protect_lite.png" type="image/png">
+                    <img src="./bluescorpion.co.uk_files/ip_protect_lite.png" alt="Blue Scorpion Video">
+                  </picture>
+                </a>
+                <br>
+                <a href="https://www.bluescorpion.co.uk/ip-protect-lite" class="btn btn-default">View product details</a>
+              </div>
+              <!-- Slide Two -->
+              <div class="carousel-item center-align active">
+                <a href="https://www.bluescorpion.co.uk/cyber-protect">
+                  <picture>
+                    <source data-srcset="/images/cyber_protect.webp" type="image/webp">
+                    <source data-srcset="/images/cyber_protect.png" type="image/png">
+                    <img src="./bluescorpion.co.uk_files/placeholder.jpg" data-src="/images/cyber_protect.png" alt="Cyber Protect">
+                  </picture>
+                </a>
+                <br>
+                <a href="https://www.bluescorpion.co.uk/cyber-protect" class="btn btn-default">View product details</a>
+              </div>
+              <!-- Slide Three -->
+              <div class="carousel-item center-align">
+                <a href="https://www.bluescorpion.co.uk/payment-solutions">
+                  <picture>
+                    <source data-srcset="/images/ing_tetra.webp" type="image/webp">
+                    <source data-srcset="/images/ing_tetra.png" type="image/png">
+                    <img src="./bluescorpion.co.uk_files/placeholder.jpg" data-src="/images/ing_tetra.png" alt="Payment Protection">
+                  </picture>
+                </a>
+                <br>
+                <a href="https://www.bluescorpion.co.uk/payment-solutions" class="btn btn-default">View product details</a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="https://www.bluescorpion.co.uk/#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="https://www.bluescorpion.co.uk/#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters px-0 video_section">
+      <div class="row equal align-items-center">
+        <div class="col-lg-6 center-align align-items-center no-gutters video_img">
+          <!-- Button trigger modal -->
+          <a href="https://www.bluescorpion.co.uk/" data-toggle="modal" class="video-btn" data-src="https://www.youtube.com/embed/g_c3fFFVFv8" data-target="#myModal">
+            <picture>
+              <source media="(min-width: 320px) and (max-width: 768px)" data-srcset="/images/video_home_768_screen.webp" type="image/webp" srcset="/images/video_home_768_screen.webp">
+              <source media="(min-width: 320px) and (max-width: 768px)" data-srcset="/images/video_home.jpg" type="image/jpeg" srcset="/images/video_home.jpg">
+              <source media="(min-width: 769px)" data-srcset="/images/video_home.webp" type="image/webp" srcset="/images/video_home.webp">
+              <source media="(min-width: 769px)" data-srcset="/images/video_home.jpg" type="image/jpeg" srcset="/images/video_home.jpg">
+              <img src="./bluescorpion.co.uk_files/video_home.jpg" data-src="/images/video_home.jpg" class="video_bg" alt="Blue Scorpion Video">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg-4 center-align">
+          <h1>Blue Scorpion</h1>
+          <p>Blue Scorpion's roots come from over 55 years' combined in-house expertise working with major retailers, Acquirers and payment service providers. Here at Blue Scorpion, we use our extensive industry knowledge to help retailers maintain, or gain, their Payment Card Industry Data Security Standard (PCI DSS) compliance quickly and cost effectively through managed services.</p>
+          <p>We have various services on offer, including <a href="https://www.bluescorpion.co.uk/ip-protect-enterprise">IP Protect</a>, <a href="https://www.bluescorpion.co.uk/ip-protect-lite">IP Protect Lite</a> and <a href="https://www.bluescorpion.co.uk/cyber-protect">Cyber Protect</a> (Blue Scorpion's latest innovation providing segregation wirelessly through a single port WiFi router), <a href="https://www.bluescorpion.co.uk/wifi">WiFi services</a> and <a href="https://www.bluescorpion.co.uk/payment-solutions">Payment solutions</a> that can work flexibly around you.</p>
+        </div>
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" id="video" allow="autoplay" src="./bluescorpion.co.uk_files/saved_resource.html"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid no-gutters px-0 want_to_know_outer">
+      <div class="row equal align-items-center">
+        <div class="col-lg-12 center-align align-items-center no-gutters want_to_know">
+          Want to know more? Call to us today on <a href="tel:+441732602111"><span class="telno">01732&nbsp;602&nbsp;111</span></a> to find out how we can help, or email <a href="mailto:sales@bluescorpion.co.uk">sales@bluescorpion.co.uk</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters px-0 benefits_section">
+      <div class="row equal align-items-center">
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+        <div class="col-lg-8 center-align align-items-center">
+          <h1 class="text-center benefits_header">The benefits of choosing Blue Scorpion</h1>
+          <ul>
+            <li>
+              <h2>Cost-effective solutions:</h2>
+              <p>We offer inclusive packages for businesses in retail and service industries, with low set up fees and monthly costs.</p>
+            </li>
+            <li>
+              <h2>Ongoing support:</h2>
+              <p>PCI DSS and data compliance standards change all the time. Our packages make sure you stay ahead of the game.</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <h2>Marketing for your business:</h2>
+              <p> We offer WiFi solutions that help you increase footfall and market your business to customers.</p>
+            </li>
+            <li>
+              <h2>Brand protection:</h2>
+              <p>A data breach is bad for business and even worse for your reputation. Stay safe and compliant with us.</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="bottom_li">
+              <h2>Reduced fines:</h2>
+              <p>Many businesses are fined for non-PCI DSS compliance. We help you reduce those fines by ensuring you are fully compliant.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters px-0 help_section">
+      <div class="row equal align-items-center">
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+        <div class="col-lg-8 center-align align-items-center">
+          <h1 class="text-center benefits_header">How can Blue Scorpion help you?</h1>
+          <ul class="help_you">
+            <li class="ip_protect_lite">
+              <a href="https://www.bluescorpion.co.uk/ip-protect-lite">
+                <span></span><br>
+                  <h2>IP Protect Lite</h2>
+                  <p>Our IP Protect Lite solution for basic network protection. Stay compliant and keep payment safe.</p>
+              </a>
+              <p>
+                <a href="https://www.bluescorpion.co.uk/ip-protect-lite" class="btn btn-default">Learn more</a>
+              </p>
+            </li>
+            <li class="wifi">
+              <a href="https://www.bluescorpion.co.uk/wifi">
+                <span></span><br>
+                  <h2>WiFi</h2>
+                    <p>Secure, GDPR compliant public WiFi, which helps generate more revenue.</p>
+              </a>
+              <p>
+                <a href="https://www.bluescorpion.co.uk/wifi" class="btn btn-default">Learn more</a>
+              </p>
+            </li>
+            <li class="payment_solutions">
+              <a href="https://www.bluescorpion.co.uk/payment-solutions">
+                <span></span><br>
+                  <h2>Payment Solutions</h2>
+                  <p>Our portfolio is far reaching - ask for our help with card payment processing and solutions for acceptance.</p>
+              </a>
+              <p>
+                <a href="https://www.bluescorpion.co.uk/payment-solutions" class="btn btn-default">Learn more</a>
+              </p>
+            </li>
+          </ul>
+          <ul class="help_you">
+            <li class="cyber_protect">
+              <a href="https://www.bluescorpion.co.uk/cyber-protect">
+              <span></span><br>
+                  <h2>Cyber Protect</h2>
+                  <p>Entry level network protection for your retail or service-industry business.</p>
+              </a>
+              <p>
+                  <a href="https://www.bluescorpion.co.uk/cyber-protect" class="btn btn-default">Learn more</a>
+              </p>
+            </li>
+            <li class="ip_protect">
+              <a href="https://www.bluescorpion.co.uk/ip-protect-enterprise">
+                <span></span><br>
+                  <h2>IP Protect</h2>
+                  <p>Let us help you stay PCI DSS compliant. Our package for mid-sized retailers includes everything you need.</p>
+              </a>
+              <p>
+                <a href="https://www.bluescorpion.co.uk/ip-protect-enterprise" class="btn btn-default">Learn more</a>
+              </p>
+            </li>
+            <li class="it_procurement">
+              <a href="https://www.bluescorpion.co.uk/it-procurement">
+                <span></span><br>
+                  <h2>IT Procurement</h2>
+                  <p>We act as consultants, helping you meet your needs with your IT processes and systems and installation.</p>
+              </a>
+              <p>
+                <a href="https://www.bluescorpion.co.uk/it-procurement" class="btn btn-default">Learn more</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+    </div>
+        <div class="container-fluid no-gutters px-0 want_to_know_2_outer">
+      <div class="row equal align-items-center want_to_know_2">
+        <div class="col-lg-6 center-align align-items-center no-gutters">
+          <p>Want to know more about any of our solutions?<br> <strong>Please get in touch.</strong><br>Email <a href="mailto:sales@bluescorpion.co.uk">sales@bluescorpion.co.uk</a><br>Telephone: <a href="tel:+441732602111"><span class="telno">01732&nbsp;602&nbsp;111</span></a></p>
+        </div>
+        <div class="col-lg-6 center-align align-items-center no-gutters">
+          <div class="row equal align-items-center center-align">
+            <div class="col-lg-6 align-items-center center-align">
+            <input type="text" class="form-control" id="contact_name" placeholder="Name" name="contact_name" title="Name" value="" fdprocessedid="3seyeg">            <input type="text" class="form-control" id="contact_email" placeholder="Email" name="contact_email" title="Email" value="" fdprocessedid="ebu6y">            </div>
+            <div class="col-lg-6 align-items-center center-align">
+            <input type="text" class="form-control" id="contact_tel" placeholder="Telephone" name="contact_tel" title="Tel" value="" fdprocessedid="4dm2g">            <button type="submit" class="btn btn-default" onclick="doContactUs()" fdprocessedid="1kg5b9">Submit</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="modal fade mx-3" id="mesgModal" tabindex="-1" role="dialog">
+ <div class="modal-dialog modal-dialog-centered h-100" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">×</span>
+		 </button>
+	  </div>
+	  <div class="modal-body p-3 text-center mx-auto">
+		 <p><span id="mesgModalPop"></span></p>
+	  </div>
+	  <div id="popbuttonsmm" class="modal-footer text-center">
+	  <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+	  </div>
+	</div>
+ </div>
+</div>
+<input id="mesgModal_button" type="button" value="" class="btn btn-default" style="display:none;" data-toggle="modal" data-target="#mesgModal">  <script language="javascript" type="text/javascript">
+    function doContactUs() {
+    	spanobj=$o('mesgModalPop');
+    	emailobj=jQuery('#contact_email');
+    	nameobj=jQuery('#contact_name');
+    	telobj=jQuery('#contact_tel');
+    	flash=null;
+    	
+    	if (!nameobj.val()) flash="Please specify your name.";
+		else{
+			if (!emailobj.val()) flash="Please specify your email address.";
+			else{
+				if (!telobj.val()) flash="Please specify your telephone number.";
+			}
+		}
+    	if (!flash) {
+			ajaxdata={
+				'email':emailobj.val(),
+				'name':nameobj.val(),
+				'tel':telobj.val(),
+			};
+			jQuery.ajax({
+				type: "GET",
+				dataType: "json",
+				url: "/index/contactus/action:apply",
+				data: ajaxdata
+			}).always(function (retdata, jqx, textStatus, error) {
+				flash=(error) ? 'A problem occurred. textStatus: ' + textStatus + ' --- Error: ' + error : retdata['flash'];
+				if (!error && fbq) fbq('track', 'CompleteRegistration');
+				while (spanobj.hasChildNodes()) spanobj.removeChild(spanobj.childNodes[0]);
+				tob=document.createTextNode(retdata['flash']);
+				spanobj.appendChild(tob);
+				butt=jQuery('#mesgModal_button');
+				if (butt) butt.click();
+				return false;
+			});
+		}
+		if (flash) {
+			while (spanobj.hasChildNodes()) spanobj.removeChild(spanobj.childNodes[0]);
+			tob=document.createTextNode(flash);
+			spanobj.appendChild(tob);
+			butt=jQuery('#mesgModal_button');
+			if (butt) butt.click();
+			return false;
+		}
+    }
+    </script>    <div class="container-fluid no-gutters buy_now_section">
+      <div class="row equal align-items-center">
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+        <div class="col-lg-4 center-align align-items-center no-gutters buy_now_icon">
+          <a href="https://www.bluescorpion.co.uk/buy-now">
+            <picture>
+              <source data-srcset="/images/buy_now.webp" type="image/webp" srcset="/images/buy_now.webp">
+              <source data-srcset="/images/buy_now.png" type="image/png" srcset="/images/buy_now.png">
+              <img src="./bluescorpion.co.uk_files/buy_now.png" data-src="/images/buy_now.png" alt="Buy now">
+            </picture>
+          </a>
+        </div>
+        <div class="col-lg-4 center-align align-items-center">
+          <h1>Buy Now</h1>
+          <p>See the value for money packages we can offer you - buy Cyber Protect and IP Protect Lite solutions online.</p>
+          <p>
+            <a href="https://www.bluescorpion.co.uk/buy-now" class="btn btn-default">Buy Now</a>
+          </p>
+        </div>
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters px-0">
+      <div class="row equal align-items-center about_us_section">
+        <div class="col-lg-3 center-align no-gutters">
+        </div>
+        <div class="col-lg-6 center-align align-items-center">
+          <h1 class="text-center">About Us</h1>
+          <p class="left_quote">Blue Scorpion is a company based on innovation and expertise. Our team have extensive knowledge of payment processing, PCI DSS payment protection and solutions for acceptance - we have more than 55 years' experience between us. We use our experience to make sure we stay ahead of the game, keeping up with current trends and investing in our people. This culture of innovation is one I am especially proud&nbsp;of.</p>
+          <p class="right_quote">We've achieved so much as a team and I look forward to seeing what else we can achieve for our customers in the future.</p>
+          <h2>Nigel Tanner, Chief Executive Officer, Blue Scorpion Ltd</h2>
+          <picture>
+            <source media="(max-width: 1024px)" data-srcset="/images/team-800px.webp" type="image/webp" srcset="/images/team-800px.webp">
+            <source media="(max-width: 1024px)" data-srcset="/images/team.jpg" type="image/jpeg" srcset="/images/team.jpg">
+            <source media="(min-width: 1025px)" data-srcset="/images/team.webp" type="image/webp" srcset="/images/team.webp">
+            <source media="(min-width: 1025px)" data-srcset="/images/team.jpg" type="image/jpeg" srcset="/images/team.jpg">
+            <img src="./bluescorpion.co.uk_files/team.jpg" data-src="/images/team.jpg" class="team_photo" alt="Blue Scorpion Team">
+          </picture>
+        </div>
+        <div class="col-lg-3 center-align no-gutters">
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="container-fluid social_media_section">
+      <div class="row equal align-items-center">
+        <div class="col-lg-12 center-align align-items-center no-gutters">
+          <h1>Blue Scorpion on Social Media</h1>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-lg-1 center-align align-items-center no-gutters">
+
+        </div>
+        <div class="col-lg-10 center-align px-0">
+          <div id="fb-root"></div>
+            <div class="social_outer">
+              <div class="fb-page" data-href="https://www.facebook.com/BlueScorpionLimited/" data-tabs="timeline" data-width="500" data-adapt-container-width="true" data-height="600px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BlueScorpionLimited/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BlueScorpionLimited/">Blue Scorpion Limited</a></blockquote></div>
+            </div>
+          </div>
+        </div>
+      <div class="col-lg-1 center-align no-gutters">
+      </div>
+      </div>
+    </div>
+    -->
+        <div class="container-fluid no-gutters px-0">
+      <div class="row equal align-items-center want_to_know_2">
+        <div class="col-lg-6 center-align align-items-center no-gutters">
+          <h2 class="mailing_list_title">Join our mailing list</h2>
+        </div>
+        <div class="col-lg-6 center-align align-items-center no-gutters">
+          <div class="row equal align-items-center center-align">
+            <div class="col-lg-6 align-items-center center-align">
+            <input type="text" class="form-control" id="mailing_name" placeholder="Name" name="mailing_name" title="Name" value="" fdprocessedid="aze5g6">            <input type="text" class="form-control" id="mailing_email" placeholder="Email" name="mailing_email" title="Email" value="" fdprocessedid="whr1p">            </div>
+            <div class="col-lg-6 align-items-center center-align">
+            <input type="text" class="form-control" id="mailing_tel" placeholder="Telephone" name="mailing_tel" title="Tel" value="" fdprocessedid="4dc9fl">            <button type="submit" class="btn btn-default" onclick="doMailingList()" fdprocessedid="4tr1kh">Submit</button></div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 check_mail">
+            <input type="checkbox" id="mailing_permission" value="y" name="mailing_permission" title="Mailing List Permission"> Tick this box to give us permission to send you emails. These will come from us only and we will not share your data with anyone.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+    function doMailingList() {
+    	spanobj=$o('mesgModalPop');
+    	emailobj=jQuery('#mailing_email');
+    	nameobj=jQuery('#mailing_name');
+    	telobj=jQuery('#mailing_tel');
+    	permv=jQuery('#mailing_permission').prop('checked');
+    	flash=null;
+    	
+    	if (!nameobj.val()) flash="Please specify your name.";
+		else{
+			if (!emailobj.val()) flash="Please specify your email address.";
+			else{
+				if (!telobj.val()) flash="Please specify your telephone number.";
+				else{
+					if (!permv) flash="Please give us permission to contact you by selecting the permission option.";
+				}
+			}
+		}
+    	if (!flash) {
+			ajaxdata={
+				'email':emailobj.val(),
+				'name':nameobj.val(),
+				'tel':telobj.val(),
+				'perm':permv
+			};
+			jQuery.ajax({
+				type: "GET",
+				dataType: "json",
+				url: "/index/mailinglist/action:apply",
+				data: ajaxdata
+			}).always(function (retdata, jqx, textStatus, error) {
+				flash=(error) ? 'A problem occurred. textStatus: ' + textStatus + ' --- Error: ' + error : retdata['flash'];
+				if (!error && fbq) fbq('track', 'CompleteRegistration');
+				while (spanobj.hasChildNodes()) spanobj.removeChild(spanobj.childNodes[0]);
+				tob=document.createTextNode(retdata['flash']);
+				spanobj.appendChild(tob);
+				butt=jQuery('#mesgModal_button');
+				if (butt) butt.click();
+				return false;
+			});
+		}
+		if (flash) {
+			while (spanobj.hasChildNodes()) spanobj.removeChild(spanobj.childNodes[0]);
+			tob=document.createTextNode(flash);
+			spanobj.appendChild(tob);
+			butt=jQuery('#mesgModal_button');
+			if (butt) butt.click();
+			return false;
+		}
+    }
+    </script>  </main>
+
+  <footer>
+    <div class="container-fluid no-gutters px-0">
+        <div class="row equal">
+        <div id="left_spacer" class="col-lg-2 no-gutters">
+        </div>
+        <div class="col-lg-2">
+          <h3>Find us</h3>
+          <h4>Head Office:</h4><p><span class="scorpion_blue">Blue Scorpion Limited</span><br>East Malling Business Centre<br>NFU Building<br>New Road<br>East Malling<br>Kent ME19 6BJ</p>        </div>
+        <div class="col-lg-2">
+          <h3 class="find_us_spacer">&nbsp;</h3>
+          <h4>EIT Head Office:</h4><p><span class="scorpion_blue">European&nbsp;Information&nbsp;Technology&nbsp;Ltd</span><br>Kent Suite<br>London House<br>Texcel Business Park<br>Thames Road<br>Crayford<br>Kent DA1 4SL</p>        </div>
+        <div class="col-lg-2">
+          <h3 class="find_us_spacer">&nbsp;</h3>
+          <h4>EIT Logistics Centre:</h4><p><span class="scorpion_blue">European&nbsp;Information&nbsp;Technology&nbsp;Ltd</span><br>Unit 5 Church Trading Estate<br>Slade Green Road<br>Erith<br>Kent DA8 2JA</p>        </div>
+        <div class="col-lg-2">
+          <h3>Contact Information</h3>
+          <dl><dt>Head Office:</dt><dd><a href="tel:+441732602111"><span class="telno">+44&nbsp;(0)&nbsp;1732&nbsp;602&nbsp;111</span></a></dd></dl><dl><dt>EIT Office:</dt><dd><a href="tel:+441322524765"><span class="telno">+44&nbsp;(0)&nbsp;1322&nbsp;524&nbsp;765</span></a></dd></dl><dl><dt>Sales Line:</dt><dd><a href="tel:+441732440510"><span class="telno">+44&nbsp;(0)&nbsp;1732&nbsp;440&nbsp;510</span></a></dd></dl><div class="clearfix"></div><br><p><a href="mailto:sales@bluescorpion.co.uk" class="mailto-link">sales@bluescorpion.co.uk</a><br><a href="http://www.bluescorpion.co.uk/">www.bluescorpion.co.uk</a><br><a href="https://www.euroit.co.uk/" target="_blank" rel="noopener">www.euroit.co.uk</a></p>        </div>
+        <div class="col-lg-2">
+          <h3>Links</h3>
+        	<p><a href="https://www.bluescorpion.co.uk/delivery-policy">Delivery Policy</a><br>
+        		<a href="https://www.bluescorpion.co.uk/refunds-and-cancellations">Refund Policy</a><br>
+          <a href="https://www.bluescorpion.co.uk/privacy-policy">Privacy Policy</a><br>
+          <a href="https://www.bluescorpion.co.uk/gdpr-consent">GDPR Consent</a><br>
+          <a href="mailto:info@bluescorpion.co.uk?subject=Update%20my%20preferences" class="mailto-link">Update My Preferences</a><br>
+          <a href="https://www.bluescorpion.co.uk/cookie-policy">Cookie Policy</a><br>
+          <a href="https://www.bluescorpion.co.uk/subject-access-request">Subject Access Request</a>
+          </p>
+          <div class="social_footer">
+            <span class="social_icons">
+              <a target="_newWinFB" href="https://www.facebook.com/BlueScorpionLimited/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinTW" href="https://twitter.com/BlueScorpionLtd" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinLI" href="https://www.linkedin.com/company/blue-scorpion-limited?trk=company_logo" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinIN" href="https://www.instagram.com/bluescorpionltd/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinYT" href="https://www.youtube.com/channel/UC1JIOvUd3eb0APDjApymN1A" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </span>
+          </div>
+        </div>
+        <div id="right_spacer" class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+      <div class="row equal no-gutters sage_icon">
+        <div class="col-lg-12 text-center no-gutters">
+          <!-- <img src="/images/placeholder.jpg" data-src="/images/Payments-by-Sage-Pay-Horizontal-2.jpg" class="text-center"> -->
+	  <img src="./bluescorpion.co.uk_files/Opayo_Logo.png" data-src="/images/Opayo_Logo.png" style="border:1px solid #dedede;" class="text-center">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="container-fluid no-gutters px-0">
+    <div class="row equal align-items-center">
+      <div class="col-lg-12 center-align align-items-center no-gutters copyright_footer">
+        Copyright © 2019 Blue Scorpion Limited. Blue Scorpion<sup>TM</sup> is a registered trademark.
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-dismissible text-center cookiealert show" role="alert">
+    <div class="cookiealert-container">
+      We use <a href="https://www.bluescorpion.co.uk/cookie-policy">cookies</a> to ensure you get the best experience on our website.
+      <button type="button" class="btn btn-default btn-sm acceptcookies" aria-label="Close" fdprocessedid="5cbz67">
+          I agree
+      </button>
+    </div>
+  </div>
+  <script async="" crossorigin="anonymous" src="./bluescorpion.co.uk_files/sdk(1).js.download"></script>
+  <link rel="stylesheet" href="./bluescorpion.co.uk_files/bootstrap.min.css">
+  <link href="./bluescorpion.co.uk_files/bluescorpion-styles-v2.css" rel="stylesheet">
+	<script>
+	_PF_addEvent(window, 'load', function() {
+		document.querySelector("body").style.opacity = 1;
+	});
+	</script>
+	<script src="./bluescorpion.co.uk_files/cookiealert.js.download" async=""></script>
+  <link href="./bluescorpion.co.uk_files/css" rel="stylesheet">
+  <link rel="stylesheet" href="./bluescorpion.co.uk_files/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="./bluescorpion.co.uk_files/jquery-3.3.1.slim.min.js.download"></script>
+  <script defer="" src="./bluescorpion.co.uk_files/popper.min.js.download"></script>
+  <script defer="" src="./bluescorpion.co.uk_files/bootstrap.min.js.download"></script>
+  <script defer="" src="./bluescorpion.co.uk_files/modernizr.js.download"></script>
+  <script defer="" id="rendered-js">// Load video popup modal
+    jQuery(document).ready(function() {
+      var $videoSrc;
+      jQuery('.video-btn').click(function() {
+        $videoSrc = jQuery(this).data("src");
+      });
+      if ($videoSrc) console.log($videoSrc);
+      jQuery('#myModal').on('shown.bs.modal', function(e) {
+        jQuery("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+      });
+      jQuery('#myModal').on('hide.bs.modal', function(e) {
+        jQuery("#video").attr('src', $videoSrc);
+      });
+    });
+  </script>
+  <script defer="">// Hover products navigation on desktop, click on mobile devices
+    if (jQuery(window).width() < 991) {
+      jQuery('#products_dropdown').removeClass('hover_or_click');
+    }
+  </script>
+  <script defer="">// Toggle on burger navigation for mobile devices
+    jQuery(document).ready(function() {
+      jQuery('.toggle').click(function() {
+        jQuery('.toggle').toggleClass('active');
+      });
+    });
+  </script>
+  <script defer="">// Load product carousel and speed of slide transition
+    jQuery(document).ready(function() {
+      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000 // 2 seconds
+    });
+  </script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./bluescorpion.co.uk_files/jquery-2.1.1.min.js.download"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="./bluescorpion.co.uk_files/bootstrap.min.js.download"></script>
+  <script src="./bluescorpion.co.uk_files/responsive-slider.js.download"></script>
+  <script type="text/javascript" src="./bluescorpion.co.uk_files/jquery.fancybox.js.download"></script>
+	<link rel="stylesheet" type="text/css" href="./bluescorpion.co.uk_files/jquery.fancybox.css" media="screen">
+	<script>
+	jQuery('.fancybox')
+	 .fancybox({
+		  type: 'iframe',
+		  autoSize : false,
+		  allowFullscreen: true,
+		  beforeLoad : function() { 
+				this.width  = parseInt(this.element.data('fancybox-width')); 
+				this.height = parseInt(this.element.data('fancybox-height'));
+		  }
+	});
+	</script>
+  <script language="javascript" type="text/javascript">
+var missing=[];
+var timerObject=null;
+var notmissing=[];
+var valObject={};
+_PF_addEvent(window, 'load', function(wevt) {
+	valObject=_PF_objectAssign(valObject, {"contact_tel":{"type":"regex","regex":"\/[0-9\\+ ]\/"}});
+	// Bootstrap JS for contact_tel
+	_PF_addEvent('contact_tel', 'keyup', function (evt) {
+		if (!preCheck(this, 'keyup')) return;
+		tval=_PF_getVar(this);
+		tres=tval.match(/[0-9\+ ]/g);
+		if (tres) {
+			_PF_setVar(this, tres.join(''));
+		}else _PF_setVar(this, '');
+	}, false);
+	_PF_addEvent('contact_tel', 'paste', function (evt) {
+		if (!preCheck(this, 'paste')) return;
+		tval=_PF_getVar(this);
+		tres=tval.match(/[0-9\+ ]/g);
+		if (tres) {
+			_PF_setVar(this, tres.join(''));
+		}else _PF_setVar(this, '');
+	}, false);
+}, false);
+
+</script>
+<script language="javascript" type="text/javascript">
+_PF_addEvent(window, 'load', function(wevt) {
+	valObject=_PF_objectAssign(valObject, {"mailing_tel":{"type":"regex","regex":"\/[0-9\\+ ]\/"}});
+	// Bootstrap JS for mailing_tel
+	_PF_addEvent('mailing_tel', 'keyup', function (evt) {
+		if (!preCheck(this, 'keyup')) return;
+		tval=_PF_getVar(this);
+		tres=tval.match(/[0-9\+ ]/g);
+		if (tres) {
+			_PF_setVar(this, tres.join(''));
+		}else _PF_setVar(this, '');
+	}, false);
+	_PF_addEvent('mailing_tel', 'paste', function (evt) {
+		if (!preCheck(this, 'paste')) return;
+		tval=_PF_getVar(this);
+		tres=tval.match(/[0-9\+ ]/g);
+		if (tres) {
+			_PF_setVar(this, tres.join(''));
+		}else _PF_setVar(this, '');
+	}, false);
+}, false);
+
+</script>
+<script type="text/javascript">
+if (jQuery) {
+	var objtabtracker=null;
+	var tid='92c940e3';
+	var rr='';
+	// Wait until the DOM has loaded before querying the document
+	jQuery(document).ready(function() {
+		objtabtracker=jQuery('#tabtracker');
+		jQuery('ul.tabs').each(function() {
+			// For each set of tabs, we want to keep track of
+			// which tab is active and it's associated content
+			var $active, $content, $links = jQuery(this).find('a');
+
+			// If the location.hash matches one of the links, use that as the active tab.
+			// If no match is found, use the first link as the initial active tab.
+			$active = jQuery($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+			$active.addClass('active');
+
+			$content = jQuery($active[0].hash);
+			// Hide the remaining content
+			$links.not($active).each(function () {
+				jQuery(this.hash).hide();
+			});
+
+			// Bind the click event handler
+			jQuery(this).on('click', 'a', function(e){
+				// Make the old tab inactive.
+				$active.removeClass('active');
+				$content.hide();
+
+				// Update the variables with the new link and content
+				$active = jQuery(this);
+				$content = jQuery(this.hash);
+				if (objtabtracker) {
+					objtabtracker.val(this.hash.toString().replace(/^#/,''));
+					if (tid && rr != '') {
+						tabcookie=_PF_getCookie('tabcookie');
+						tabcookie=(tabcookie) ? JSON.parse(tabcookie) : {};
+						if ('rr' in tabcookie && tabcookie['rr'] != rr) tabcookie={'rr':rr};
+						tabcookie[tid]=objtabtracker.val();
+						//_PF_setCookie('tabcookie', tid + '|' + objtabtracker.val());
+						_PF_setCookie('tabcookie', JSON.stringify(tabcookie));
+					}
+					//alert('tabcookie: ' + _PF_getCookie('tabcookie'));
+				}
+				// Make the tab active.
+				$active.addClass('active');
+				$content.show();
+
+				// Prevent the anchor's default click action
+				e.preventDefault();
+			});
+		});
+		if (objtabtracker) {
+			if (objtabtracker.val()) {
+				jtmp=jQuery('#l' + objtabtracker.val());
+				if (jtmp) {
+					jtmp.trigger("click");
+				}
+			}else{
+				if (window.location.hash) {
+					objtabtracker.val(window.location.hash.toString().replace(/^#/,''));
+					if (tid && rr != '') {
+						tabcookie=_PF_getCookie('tabcookie');
+						tabcookie=(tabcookie) ? JSON.parse(tabcookie) : {};
+						if ('rr' in tabcookie && tabcookie['rr'] != rr) tabcookie={'rr':rr};
+						tabcookie[tid]=objtabtracker.val();
+						//_PF_setCookie('tabcookie', tid + '|' + objtabtracker.val());
+						_PF_setCookie('tabcookie', JSON.stringify(tabcookie));
+					}
+					jQuery(document).scrollTop(0);
+				}else{
+					tabpatt=/(&|\?)tabtracker=([^&]+)/;
+					pmat=tabpatt.exec(window.location.href);
+					if (pmat && 2 in pmat) {
+						tabcookie=_PF_getCookie('tabcookie');
+						ok=true;
+						if (tabcookie) {
+							tabcookie=JSON.parse(tabcookie);
+							if (tabcookie['rr'] == rr) {
+								//if (!(tabcookiebits[0] == '92c940e3' && tabcookiebits[1] == pmat[2])) ok=false;
+								if (tid in tabcookie && tabcookie[tid] == pmat[2]) ok=false;
+							}
+						}
+						if (ok) {
+							objtabtracker.val(pmat[2]);
+							jtmp=jQuery('#l' + objtabtracker.val());
+							if (jtmp) {
+								jtmp.trigger("click");
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+	function _PF_linkBack(url) {
+		u=url;
+		if (objtabtracker) {
+			var jsonObj={};
+			jsonObj['tabtracker']=objtabtracker.val();
+			jsonObj['_PF_arg_merge']='y';
+			uriobj=URI(u);
+//			ubits=uriobj.search(true);
+			uriobj.setSearch('_frmobj', JSON.stringify(jsonObj));
+			url=uriobj;
+		}
+		return url;
+	}
+	
+}
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function() {
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c362d6e361b3372892f3e42/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>

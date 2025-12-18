@@ -498,6 +498,17 @@ body {
   color: var(--text-muted);
 }
 
+.location-type {
+  display: inline-block;
+  background: var(--accent-secondary);
+  color: var(--bg-primary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header {
